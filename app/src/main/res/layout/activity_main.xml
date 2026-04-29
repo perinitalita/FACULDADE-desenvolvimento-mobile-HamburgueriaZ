@@ -15,10 +15,9 @@
             android:layout_width="match_parent"
             android:layout_height="160dp"
             android:layout_marginBottom="16dp"
-            android:background="#FFC107"
             android:contentDescription="@string/app_name"
-            android:scaleType="centerInside"
-            android:src="@mipmap/ic_launcher" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
 
         <TextView
             style="@style/EstiloTexto"
