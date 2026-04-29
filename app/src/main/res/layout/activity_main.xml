@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFC107"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            style="@style/EstiloTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_faca_pedido"
+            android:textColor="#757575"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edt_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_nome"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp" />
+
+        <CheckBox
+            android:id="@+id/cb_bacon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_bacon"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/cb_queijo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_queijo"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/cb_onion_rings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_onion"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            style="@style/EstiloTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_quantidade"
+            android:textColor="#757575" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_menos"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#6200EE"
+                android:text="-"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/txt_quantidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="1"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_mais"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#6200EE"
+                android:text="+"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/EstiloTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_resumo"
+            android:textColor="#757575" />
+
+        <TextView
+            android:id="@+id/txt_resumo_preco"
+            style="@style/EstiloTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="R$ 20"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btn_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6200EE"
+            android:text="@string/btn_enviar"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>
